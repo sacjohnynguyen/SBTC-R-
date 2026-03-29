@@ -1,7 +1,8 @@
 
 package doannhomsbtc;
+package doannhomsbtc;
 import java.util.*;
-public class ex3{
+public class ex1 {
     int []a;
     void sinhMang(int n){
         Random rd = new Random();
@@ -16,24 +17,25 @@ public class ex3{
             System.out.print(a[i]+" ");
         }
     }
-    void sapXepTangDan() {
-        for (int i = 0; i < a.length - 1; i++) {
-            for (int j = i + 1; j < a.length; j++) {
-                if (a[i] > a[j]) {
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
+    void timMax() {
+        if (a == null || a.length == 0) {
+            System.out.println("Mang rong!");
+            return;
+        }
+        
+        int max = a[0]; 
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i]; 
             }
         }
+        System.out.println("\nGia tri lon nhat trong mang la: " + max);
     }
     public static void main(String[] args) {
-        ex3 l = new ex3();
+        ex1 l = new ex1();
         l.sinhMang(10);
         l.in("Hien thi mang");
-        l.sapXepTangDan();
-        l.in("Sau khi sap xep");
-    
+        l.timMax();
     }
     
 }
