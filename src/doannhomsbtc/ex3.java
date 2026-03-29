@@ -1,7 +1,6 @@
-
 package doannhomsbtc;
 import java.util.*;
-public class ex3{
+public class ex1 {
     int []a;
     void sinhMang(int n){
         Random rd = new Random();
@@ -28,12 +27,11 @@ public class ex3{
         }
     }
     public static void main(String[] args) {
-        ex3 l = new ex3();
+        ex1 l = new ex1();
         l.sinhMang(10);
         l.in("Hien thi mang");
         l.sapXepGiamDan();
         l.in("Sau khi sap xep: ");
-    
     }
     
 }
