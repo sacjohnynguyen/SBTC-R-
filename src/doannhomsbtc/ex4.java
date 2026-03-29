@@ -24,10 +24,10 @@ public class ex4 {
             return;
         }
         
-        int min = a[0]; // Giả sử phần tử đầu tiên là lớn nhất
+        int min = a[0]; 
         for (int i = 1; i < a.length; i++) {
             if (a[i] < min) {
-                min = a[i]; // Cập nhật lại max nếu tìm thấy số lớn hơn
+                min = a[i]; 
             }
         }
         System.out.println("\nGia tri nho nhat: " + min);
