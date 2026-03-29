@@ -1,9 +1,7 @@
 
 package doannhomsbtc;
-
-import java.util.Random;
 import java.util.*;
-public class ex4 {
+public class ex3{
     int []a;
     void sinhMang(int n){
         Random rd = new Random();
@@ -18,24 +16,24 @@ public class ex4 {
             System.out.print(a[i]+" ");
         }
     }
-    void timMin() {
-        if (a == null || a.length == 0) {
-            System.out.println("Mảng rỗng!");
-            return;
-        }
-        
-        int min = a[0]; // Giả sử phần tử đầu tiên là lớn nhất
-        for (int i = 1; i < a.length; i++) {
-            if (a[i] < min) {
-                min = a[i]; // Cập nhật lại max nếu tìm thấy số lớn hơn
+    void sapXepGiamDan() {
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = i + 1; j < a.length; j++) {
+                if (a[i] < a[j]) {
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
             }
         }
-        System.out.println("\nGia tri nho nhat: " + min);
     }
     public static void main(String[] args) {
-        ex4 l = new ex4();
+        ex3 l = new ex3();
         l.sinhMang(10);
         l.in("Hien thi mang");
-        l.timMin();
+        l.sapXepGiamDan();
+        l.in("Sau khi sap xep");
+    
     }
+    
 }
