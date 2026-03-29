@@ -1,8 +1,9 @@
 
 package doannhomsbtc;
-package doannhomsbtc;
+
+import java.util.Random;
 import java.util.*;
-public class ex1 {
+public class ex4 {
     int []a;
     void sinhMang(int n){
         Random rd = new Random();
@@ -17,25 +18,24 @@ public class ex1 {
             System.out.print(a[i]+" ");
         }
     }
-    void timMax() {
+    void timMin() {
         if (a == null || a.length == 0) {
-            System.out.println("Mang rong!");
+            System.out.println("Mảng rỗng!");
             return;
         }
         
-        int max = a[0]; 
+        int min = a[0]; 
         for (int i = 1; i < a.length; i++) {
-            if (a[i] > max) {
-                max = a[i]; 
+            if (a[i] < min) {
+                min = a[i]; 
             }
         }
-        System.out.println("\nGia tri lon nhat trong mang la: " + max);
+        System.out.println("\nGia tri nho nhat: " + min);
     }
     public static void main(String[] args) {
-        ex1 l = new ex1();
-        l.sinhMang(10);
+        ex4 l = new ex4();
+        l.sinhMang(11);
         l.in("Hien thi mang");
-        l.timMax();
+        l.timMin();
     }
-    
 }
