@@ -1,4 +1,3 @@
-
 package doannhomsbtc;
 import java.util.*;
 public class ex1 {
