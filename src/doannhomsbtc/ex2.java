@@ -32,7 +32,7 @@ public class ex2 {
         l.sinhMang(10);
         l.in("Hien thi mang");
         l.sapXepTangDan();
-        l.in("Sau khi sap xep");
+        l.in("Sau khi sap xep: ");
     }
     
 }
