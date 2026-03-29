@@ -34,7 +34,7 @@ public class ex4 {
     }
     public static void main(String[] args) {
         ex4 l = new ex4();
-        l.sinhMang(10);
+        l.sinhMang(11);
         l.in("Hien thi mang");
         l.timMin();
     }
