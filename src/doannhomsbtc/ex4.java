@@ -16,10 +16,10 @@ public class ex3{
             System.out.print(a[i]+" ");
         }
     }
-    void sapXepGiamDan() {
+    void sapXepTangDan() {
         for (int i = 0; i < a.length - 1; i++) {
             for (int j = i + 1; j < a.length; j++) {
-                if (a[i] < a[j]) {
+                if (a[i] > a[j]) {
                     int temp = a[i];
                     a[i] = a[j];
                     a[j] = temp;
@@ -31,7 +31,7 @@ public class ex3{
         ex3 l = new ex3();
         l.sinhMang(10);
         l.in("Hien thi mang");
-        l.sapXepGiamDan();
+        l.sapXepTangDan();
         l.in("Sau khi sap xep");
     
     }
